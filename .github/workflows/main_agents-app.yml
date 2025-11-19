@@ -25,6 +25,7 @@ jobs:
           npm run build
         env:
           NODE_ENV: production
+          NPM_CONFIG_PRODUCTION: false
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
