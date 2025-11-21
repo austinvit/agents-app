@@ -54,7 +54,7 @@ export default function SalesReportChat() {
 
     try {
       // Call backend API
-      const response = await fetch(`${process.env.NEXT_PUBLIC_SALES_SERVER_HOST}/api/sales-report`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_SALES_SERVER_HOST}/api/compile-sales`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
